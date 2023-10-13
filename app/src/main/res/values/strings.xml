@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FetchAPI</string>
+    <string name="change_picture_of_characters">Change Picture Of Characters</string>
+</resources>
