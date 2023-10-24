@@ -7,63 +7,14 @@
     android:background="@color/yellow"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/characterImage"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/placeholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <Button
-        android:id="@+id/getPhotoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="@string/change_picture_of_characters"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/characterImage"
-        app:layout_constraintEnd_toEndOf="@+id/characterImage"
-        app:layout_constraintStart_toStartOf="@+id/characterImage" />
-
-    <TextView
-        android:id="@+id/textFullName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:textColor="#673AB7"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/characterImage"
-        app:layout_constraintStart_toStartOf="@+id/characterImage"
-        app:layout_constraintTop_toBottomOf="@+id/characterImage" />
-
-    <TextView
-        android:id="@+id/textFamily"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:textColor="#673AB7"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/characterImage"
-        app:layout_constraintStart_toStartOf="@+id/characterImage"
-        app:layout_constraintTop_toBottomOf="@+id/characterImage" />
-
-    <TextView
-        android:id="@+id/textTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="Game of Thrones"
-        android:textColor="#451C8E"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/getPhotoButton"
-        app:layout_constraintEnd_toEndOf="@+id/characterImage"
-        app:layout_constraintStart_toStartOf="@+id/characterImage" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/characterList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/characters"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
