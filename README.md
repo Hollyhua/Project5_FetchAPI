@@ -8,7 +8,7 @@ Time spent: **15** hours spent in total
 
 ## Summary
 
-**RecyclerView** is an android app that **An app that displays a scrollable list of characters from the Game of Thrones API")**
+**RecyclerView** is an android app that **An app that displays a scrollable list of characters from the Game of Thrones API**
 
 If I had to describe this project in three (3) emojis, they would be: **🥇😄🎂**
 
