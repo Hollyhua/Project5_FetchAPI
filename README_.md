@@ -1,16 +1,16 @@
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-# AND101 Project 6 - CYOAPI Part 2: RecyclerView Edition
+# AND101 Project 5 - Choose Your Own API
 
 Submitted by: **Hua Xiao**
 
-Time spent: **15** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Summary
 
-**RecyclerView** is an android app that **An app that displays a scrollable list of characters from the Game of Thrones API**
+**FetchAPI** is an android app that **An app that displays a random character from the Game of Thrones API**
 
-If I had to describe this project in three (3) emojis, they would be: **🥇😄🎂**
+If I had to describe this project in three (3) emojis, they would be: **😄, 👍, 👩‍🎓**
 
 ## Application Features
 
@@ -19,24 +19,28 @@ If I had to describe this project in three (3) emojis, they would be: **🥇😄
 The following REQUIRED features are completed:
 
 - [x] Make an API call to an API of your choice using AsyncHTTPClient
-- [x] Implement a RecyclerView to display a list of entries from the API
-- [x] Display at least three (3) pieces of data for each RecyclerView item
+- [x] Display at least three (3) pieces of data for each API entry retrieved
+- [x] A working Button requests a new API entry and updates the data displayed
 
 The following STRETCH features are implemented:
 
-- [ ] Add a UI element for the user to interact with API further
-- [x] Show a `Toast` or `Snackbar` when an item is clicked
-- [x] Add item dividers with `DividerItemDecoration`
+- [ ] Add a query to the API request
+  - The query I added is **FILL IN HERE**
+- [ ] Build a UI to allow users to add that query
 
 The following EXTRA features are implemented:
 
 - [ ] List anything else that you added to improve the app!
 
+## API Choice
+
+My chosen API for this project is **Game of Thrones Characters https://thronesapi.com/api/v2/Characters**.
+
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='https://i.imgur.com/sOq7FBB.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://i.imgur.com/2qCynol.gif' title='Video Demo' width='' alt='Video Demo' />
 
 GIF created with **InShot**
 
