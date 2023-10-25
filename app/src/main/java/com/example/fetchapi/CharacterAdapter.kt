@@ -12,6 +12,9 @@ import com.bumptech.glide.Glide
 
 
 class CharacterAdapter(private val characterList: List<Characters>): RecyclerView.Adapter<CharacterAdapter.ViewHolder>() {
+    /**
+     * Provide a reference to that type of 藕粉雌蛾身体哈他有are using
+     */
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         val characterImage: ImageView
@@ -23,12 +26,7 @@ class CharacterAdapter(private val characterList: List<Characters>): RecyclerVie
             characterImage = view.findViewById(R.id.characterImage)
             fullName = view.findViewById(R.id.textFullName)
             family = view.findViewById(R.id.textFamily)
-
-
         }
-
-
-
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterAdapter.ViewHolder {
@@ -41,6 +39,7 @@ class CharacterAdapter(private val characterList: List<Characters>): RecyclerVie
         Glide.with(holder.itemView)  //bind the photo url to the catImage
             .load(characterList[position].imageUrl)// load the content of the url of the photo, position is the index
             .centerCrop()// make photo centered
+            .placeholder((R.drawable.placeholder))
             .into(holder.characterImage)//passing imageview with the photo into
 
         holder.fullName.text = characterList[position].fullName
@@ -54,7 +53,7 @@ class CharacterAdapter(private val characterList: List<Characters>): RecyclerVie
     }
 
     override fun getItemCount(): Int {
-        return characterList.size
+        return characterList.size  // get the size of the dataset
     }
 
 

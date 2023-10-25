@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Log.d("pokemonImageURL", "pokemon image URL set")
+        Log.d("characterURL", "character image URL set")
 
         rvCharacters = binding.characterList
         characterList = mutableListOf()
