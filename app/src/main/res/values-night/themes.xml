@@ -2,6 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.FetchAPI" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:fontFamily">@font/akaya_telivigala</item>
+
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 </resources>
